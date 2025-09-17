@@ -1,31 +1,31 @@
-.bgSingin{
+.bgSingIn{
     background-color: #130F17;
 }
 
-.titleSingin{
+.titleSingIn{
     font-size: 6rem;
     color: #5B2C6F !important;
 }
 
-.inputsSingin{
+.inputSingIn{
     text-indent: 7px;
     transition: 0.2s linear;
 }
-.inputsSingin::placeholder{
+.inputSingIn::placeholder{
     color: rgb(200, 200, 200);
     font-weight: bold;
 }
-.inputsSingin:focus{
+.inputSingIn:focus{
     outline: none !important;
     background-color: #303030;
 }
 
-.btnSingin{
+.btnSingIn{
     background-color: #5B2C6F !important;
     color: rgb(240, 240, 240) !important;
     transition: 0.15s linear !important;
 }
-.btnSingin:hover{
+.btnSingIn:hover{
     transition: 0.15s linear;
     background-color: #4A2359 !important;
 }
