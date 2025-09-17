@@ -1,0 +1,31 @@
+.bgSingin{
+    background-color: #130F17;
+}
+
+.titleSingin{
+    font-size: 6rem;
+    color: #5B2C6F !important;
+}
+
+.inputsSingin{
+    text-indent: 7px;
+    transition: 0.2s linear;
+}
+.inputsSingin::placeholder{
+    color: rgb(200, 200, 200);
+    font-weight: bold;
+}
+.inputsSingin:focus{
+    outline: none !important;
+    background-color: #303030;
+}
+
+.btnSingin{
+    background-color: #5B2C6F !important;
+    color: rgb(240, 240, 240) !important;
+    transition: 0.15s linear !important;
+}
+.btnSingin:hover{
+    transition: 0.15s linear;
+    background-color: #4A2359 !important;
+}
