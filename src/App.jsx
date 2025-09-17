@@ -31,26 +31,24 @@ function App() {
   }, []);
 
   return (
-    <>
-      <div className="bgSingin p-5 rounded-5">
-        <h1 className="titleSingin fw-bold m-0">Roothub</h1>
-        <form className="d-flex flex-column my-4">
-          <input
-            type="text"
-            className="inputsSingin mb-4 text-light border-0 p-2 rounded-1"
-            placeholder="E-mail"
-          ></input>
-          <input
-            type="text"
-            className="inputsSingin text-light border-0 p-2 rounded-1"
-            placeholder="Password"
-          ></input>
-        </form>
-        <button className="btnSingin rounded-1 fs-3 fw-bold btn w-100">
-          Sing in
-        </button>
-      </div>
-    </>
+    <div className="bgSingin p-5 rounded-5">
+      <h1 className="titleSingin fw-bold m-0">Roothub</h1>
+      <form className="d-flex flex-column my-4">
+        <input
+          type="text"
+          className="inputsSingin mb-4 text-light border-0 p-2 rounded-1"
+          placeholder="E-mail"
+        ></input>
+        <input
+          type="text"
+          className="inputsSingin text-light border-0 p-2 rounded-1"
+          placeholder="Password"
+        ></input>
+      </form>
+      <button className="btnSingin rounded-1 fs-3 fw-bold btn w-100">
+        Sing in
+      </button>
+    </div>
   );
 }
 
