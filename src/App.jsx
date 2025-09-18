@@ -1,9 +1,8 @@
 import "./pages/login/Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Login from "./pages/login/Login.jsx"
-
+import AppRoutes from "./routes";
 function App() {
-  return <Login />;
+  return <AppRoutes />;
 }
 
 export default App;
