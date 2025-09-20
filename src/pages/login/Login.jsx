@@ -1,11 +1,14 @@
 import "./Login.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from "react";
+import api from "../../services/api";
+import { Navigate, useNavigate } from "react-router-dom";
 
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -15,8 +18,7 @@ function Login() {
 
             if (res.data.access_token) {
                 localStorage.setItem("token", res.data.access_token);
-                setMessage("Login Sucefull");
-                window.location.href = "/home";
+                navigate("/home");
             } else {
                 setMessage("Login Failed");
             }
@@ -33,7 +35,7 @@ function Login() {
         <form onSubmit={handleSubmit}>
             <div className="bgSingIn p-5 rounded-5">
                 <h1 className="titleSingIn fw-bold m-0">Roothub</h1>
-                <form className="d-flex flex-column my-4">
+                <div className="d-flex flex-column my-4">
                     <input
                         type="email"
                         className="inputSingIn mb-4 text-light border-0 p-2 rounded-1"
@@ -48,7 +50,7 @@ function Login() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     ></input>
-                </form>
+                </div>
                 <button type="submit" className="btnSingIn rounded-1 fs-3 fw-bold btn w-100">
                     Login
                 </button>
