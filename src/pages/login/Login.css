@@ -1,10 +1,9 @@
 .bgSingIn{
-    background-color: #130F17;
+    background-color: #130f17;
 }
 
 .titleSingIn{
-    font-size: 6rem;
-    color: #5B2C6F !important;
+    font-size: 4.5rem;
 }
 
 .inputSingIn{
@@ -16,16 +15,19 @@
     font-weight: bold;
 }
 .inputSingIn:focus{
-    outline: none !important;
+    outline: none ;
     background-color: #303030;
 }
 
 .btnSingIn{
-    background-color: #5B2C6F !important;
-    color: rgb(240, 240, 240) !important;
-    transition: 0.15s linear !important;
+    background-color: #5B2C6F ;
+    color: rgb(240, 240, 240) ;
+    transition: 0.15s linear ;
 }
 .btnSingIn:hover{
     transition: 0.15s linear;
-    background-color: #4A2359 !important;
+    background-color: #4A2359 ;
+}
+.hub-span{
+    color:rgb(255, 50, 50)
 }
